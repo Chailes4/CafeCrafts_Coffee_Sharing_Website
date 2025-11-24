@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Café Crafts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.php">Café<small>Crafts</small></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Recipe
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	
+				<li class="nav-item active"><a href="abt.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="fb.html" class="nav-link">Feedback</a>
+	         </li>
+	         <li class="nav-item"><a class="nav-link" id="Home" href="#"  data-toggle="modal" data-target="#Login">Login</a>
+              </li>
+	        </ul>
+	      </div>
+		  </div>
+	  </nav>
+
+    <!-- END nav -->
+
+<div class="modal fade" id="Sign-Up">
+        <div class="modal-dialog modal-dialog-centered modal-lg text-center" >
+            <div class="modal-content" id="signupmod">
+                <div class="modal-header">
+                    <p class="font-weight-bold">Sign-Up</p>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="signup.php" method="post" class="form-horizontal">
+                        <div class="form-group control-label">
+                            <input type="text" name="firstname" placeholder="First Name" autocomplete="false" required>
+                        </div>
+                        <div class="form-group control-label">
+                            <input type="text" name="lastname" placeholder="Last Name" autocomplete="false" required>
+                        </div>
+                        <div class="form-group control-label">
+                            <input type="email" name="email" placeholder="E-mail" autocomplete="false" required>
+                        </div>
+                        <div class="form-group control-label">
+                            <input type="password" name="password" id="pw1" placeholder="Password" autocomplete="false" required>
+                        </div>
+                        <div class="form-group control-label">
+                            <input type="password" id="pw2" placeholder="Confirm Password" autocomplete="false">
+                            <br><span id="match"></span><br>
+                        </div>
+                        <div id="tnctext" style="color: black;">By Signing Up, You are agreeing with the site's <a href="#" data-toggle="modal" data-target="#TNC">Terms and Conditions</a></div>
+                        <input type="submit" value="Sign-Up" id="block" style="color: black;">
+                    </form>
+
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <span class="dialouge" style="color: black;">Already have an account?</span><button type="button" class="btn loginbtn" data-toggle="modal"
+                        data-target="#Login" data-dismiss="modal"><span id="log" style="color:black;">Login</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Login">
+    <div class="modal-dialog modal-dialog-centered modal-lg text-center">
+        <div class="modal-content" id="modal2">
+            <div class="modal-header">
+                <div id="LogFirst" class="font-weight-bold"></div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="login.php" method="POST">
+                    <div class="form-group control-label">
+                        <input type="email" name="LogEmail" placeholder="E-mail" autocomplete="false">
+                    </div>
+                    <div class="form-group control-label">
+                        <input type="password" name="LogPassword" placeholder="Password" autocomplete="false">
+                    </div>
+                    <input type="submit" value="Login" id="block2">
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <span class="dialouge" style="color: black;">Create an account?</span><button type="button" class="btn signinbtn" data-dismiss="modal"
+                    data-toggle="modal" data-target="#Sign-Up"><span class="signbtntxt" style="color: black;">Sign-Up</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="home-slider owl-carousel">
+
+      <div class="slider-item" style="background-image: url(images/bg-about.jpg);" data-stellar-background-ratio="0.5">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row slider-text justify-content-center align-items-center">
+
+            <div class="col-md-7 col-sm-12 text-center ftco-animate">
+            	<h1 class="mb-3 mt-5 bread">About Us</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home</a></span> <span>About</span></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <section class="ftco-about d-md-flex">
+    	<div class="one-half img" style="background-image: url(images/bg-about1.jpg);"></div>
+    	<div class="one-half ftco-animate">
+    		<div class="overlap">
+	        <div class="heading-section ftco-animate ">
+	        	<span class="subheading">Welcome</span>
+	          <h2 class="mb-4">Coffee Crafters</h2>
+	        </div>
+	        <div>
+	  				<p style="text-align: justify; color: ghostwhite;">Welcome to Café Crafts, a haven for specialty coffee lovers! <br> <br>
+
+					At Café Crafts, we believe that coffee is more than simply a drink; it is a craft, a passion, and a lifestyle. Our internet platform is dedicated to bringing together people who love coffee from all over the world to express their admiration for the artistry and culture of specialty coffee. <br> <br>
+
+					Café Crafts was founded on a shared passion for specialty coffee and a desire to provide a venue for those who love coffee to interact, learn, and inspire one another. What began as an easy concept has grown into an engaging internet platform committed to honoring the craftsmanship and culture of coffee.</p>
+	  			</div>
+  			</div>
+    	</div>
+    </section>
+
+    <section class="ftco-about d-md-flex">
+    	<div class="one-half img" style="background-image: url(images/bg-fd.jpg);"></div>
+    	<div class="one-half ftco-animate">
+    		<div class="overlap">
+	        <div class="heading-section ftco-animate ">
+	        	<span class="subheading">Discover</span>
+	          <h2 class="mb-4">Our Story</h2>
+	        </div>
+	        <div>
+	  				<p style="color: ghostwhite; text-align: justify;">In the heart of a college town, three students, Chailes, Joza, and Den, bonded over their shared love for coffee. Inspired by their passion and fueled by countless late-night study sessions fueled by caffeine, they decided to create a platform where coffee enthusiasts could gather and share their favorite recipes. Thus, "Café Crafts" was born. With Chailes' knack for web design, Joza's expertise in coffee brewing, and Den's flair for storytelling, they crafted an inviting online space where users could exchange recipes, brewing techniques, and coffee-related experiences. Together, they embarked on a mission to build a vibrant community of coffee lovers, united by their love for the perfect cup.</p>
+	  			</div>
+  			</div>
+    	</div>
+    </section>
+
+<section class="ftco-section img" id="ftco-testimony" style="background-image: url(images/bg_1.jpg);"  data-stellar-background-ratio="0.5">
+    	<div class="overlay"></div>
+	    <div class="container">
+	      <div class="row justify-content-center mb-5">
+	        <div class="col-md-7 heading-section text-center ftco-animate">
+	        	<span class="subheading">Testimony</span>
+	          <h2 class="mb-4">Viewer Says</h2>
+	          <p style="color: ghostwhite;">Discover what viewers are saying about the coffee on our website – a blend of flavor and feedback.</p>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="container-wrap">
+	      <div class="row d-flex no-gutters">
+	        <div class="col-lg align-self-sm-end ftco-animate">
+	          <div class="testimony">
+	             <blockquote>
+	                <p>&ldquo;Absolutely hooked on the coffee recipes here! Thanks for making my mornings brighter!&rdquo;</p>
+	              </blockquote>
+	              <div class="author d-flex mt-4">
+	                <div class="image mr-3 align-self-center">
+	                  <img src="images/382586061_837945311119143_3780331124799363970_n - Copy.jpg" alt="">
+	                </div>
+	                <div class="name align-self-center">Althea Benedictos <span class="position">Illustrator Designer</span></div>
+	              </div>
+	          </div>
+	        </div>
+	        <div class="col-lg align-self-sm-end">
+	          <div class="testimony overlay">
+	             <blockquote>
+	                <p>&ldquo;The coffee creations shared on this website have elevated my home brewing game to a whole new level. Can't get enough!&rdquo;</p>
+	              </blockquote>
+	              <div class="author d-flex mt-4">
+	                <div class="image mr-3 align-self-center">
+	                  <img src="images/person_2.jpg" alt="">
+	                </div>
+	                <div class="name align-self-center">Joza Miranda<span class="position">Illustrator Designer</span></div>
+	              </div>
+	          </div>
+	        </div>
+	        <div class="col-lg align-self-sm-end ftco-animate">
+	          <div class="testimony">
+	             <blockquote>
+	                <p>&ldquo;Finally found a place where I can connect with fellow coffee lovers and discover amazing recipes. Love the sense of community here! &rdquo;</p>
+	              </blockquote>
+	              <div class="author d-flex mt-4">
+	                <div class="image mr-3 align-self-center">
+	                  <img src="images/person_3.jpg" alt="">
+	                </div>
+	                <div class="name align-self-center">Den Kalille Mondaya<span class="position">Illustrator Designer</span></div>
+	              </div>
+	          </div>
+	        </div>
+	        <div class="col-lg align-self-sm-end">
+	          <div class="testimony overlay">
+	             <blockquote>
+	                <p>&ldquo;The step-by-step guides make it so easy to recreate my favorite coffee shop drinks at home. Thank you for the inspiration!&rdquo;</p>
+	              </blockquote>
+	              <div class="author d-flex mt-4">
+	                <div class="image mr-3 align-self-center">
+	                  <img src="images/person_2.jpg" alt="">
+	                </div>
+	                <div class="name align-self-center">Christine Chailes Reyes<span class="position">Illustrator Designer</span></div>
+	              </div>
+	          </div>
+	        </div>
+	        <div class="col-lg align-self-sm-end ftco-animate">
+	          <div class="testimony">
+	            <blockquote>
+	              <p>&ldquo;As a coffee enthusiast, I've tried countless recipes, but the ones shared on this site are truly exceptional. Keep up the fantastic work!&rdquo;</p>
+	            </blockquote>
+	            <div class="author d-flex mt-4">
+	              <div class="image mr-3 align-self-center">
+	                <img src="images/person_3.jpg" alt="">
+	              </div>
+	              <div class="name align-self-center">Darell Gianne Gatchalian<span class="position">Illustrator Designer</span></div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+
+    <section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/bg_2.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+        	<div class="col-md-10">
+        		<div class="row">
+		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div class="icon"><span class="flaticon-coffee-cup"></span></div>
+		              	<strong class="number" data-number="100">0</strong>
+		              	<span>Coffee Shops</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div class="icon"><span class="flaticon-coffee-cup"></span></div>
+		              	<strong class="number" data-number="85">0</strong>
+		              	<span>Number of Users</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div class="icon"><span class="flaticon-coffee-cup"></span></div>
+		              	<strong class="number" data-number="10567">0</strong>
+		              	<span>Happy Users</span>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+		            <div class="block-18 text-center">
+		              <div class="text">
+		              	<div class="icon"><span class="flaticon-coffee-cup"></span></div>
+		              	<strong class="number" data-number="900">0</strong>
+		              	<span>Coffee</span>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+        </div>
+      </div>
+    </section>
+
+    	   <div class="overlay"></div>
+	    <div class="container">
+	      <div class="row justify-content-center mb-5">
+	        <div class="col-md-7 heading-section text-center ftco-animate">
+	        	<br>
+	        	<span class="subheading">Developers</span>
+	        	<br>
+	          <p style="color: whitesmoke;">Introducing the developers who put their full efforts to pull this up.</p>
+	        </div>
+	      </div>
+	    </div>
+
+<!-- Developer Profiles Container -->
+<div class="container my-5"> <!-- Margin on the top and bottom for spacing -->
+    <div class="row justify-content-center"> <!-- Center the profiles -->
+        <!-- Developer Profile 1 -->
+        <div class="col-md-4 text-center profile-card"> <!-- Individual profile card -->
+            <div class="profile-photo" style="background-image: url('images/me.jpg');"></div> <!-- Profile photo -->
+            <h3 style="">Christine Chailes Reyes</h3> <!-- Developer name -->
+            <p style="font-weight: bold">Lead Developer</p> <!-- Developer role -->
+            <p>Christine is a software engineer with 10 years of experience in full-stack development and specializes in React and Node.js.</p> <!-- Developer bio -->
+        </div>
+
+        <!-- Developer Profile 2 -->
+        <div class="col-md-4 text-center profile-card">
+            <div class="profile-photo" style="background-image: url('images/joza.jpg');"></div>
+            <h3>Joza Miranda</h3>
+            <p style="font-weight: bold">Backend Developer</p>
+            <p>Joza focuses on backend technologies, including PHP, JS, and MySQL. She enjoys building scalable systems.</p>
+        </div>
+
+        <!-- Developer Profile 3 -->
+        <div class="col-md-4 text-center profile-card">
+            <div class="profile-photo" style="background-image: url('images/den.jpg');"></div>
+            <h3>Den Kalille Gabrielle Mondaya</h3>
+            <p style="font-weight: bold">Frontend Developer</p>
+            <p>Den has expertise in frontend development, primarily with Vue.js and CSS frameworks. She enjoys creating intuitive UIs.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Custom CSS for Profile Cards -->
+<style>
+.profile-card {
+    background-color: #563d2d; /* Light gray background */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    color: whitesmoke;
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Scale up on hover for a subtle effect */
+}
+
+.profile-photo {
+    height: 150px; /* Size of the profile photo */
+    width: 150px; /* Make it a square */
+    border-radius: 50%; /* Make it circular */
+    background-size: cover; /* Ensure the image covers the entire space */
+    background-position: center; /* Center the image */
+    margin-bottom: 10px; /* Space below the photo */
+}
+</style>
+
+      <footer class="ftco-footer ftco-section img" style="padding-top: 20px; padding-bottom: 20px;">
+    <div class="overlay"></div>
+    <div class="container" style="padding-left: 15px; padding-right: 15px;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="ftco-footer-widget mb-3">
+                    <h2 class="ftco-heading-2">About Us</h2>
+                    <p style="font-size: 14px;">At Café Crafts, we're fueled by our passion for coffee and our desire to share that passion with the world. Founded by three coffee-loving friends, Chailes, Joza, and Den, Café Crafts is more than just a website – it's a community.</p>
+                    <div class="social">
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foottitle col-lg-6">
+            	<br>
+            	<br>
+                <h1 style="font-size: 100px;">Café Crafts</h1>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="ftco-footer-widget mb-3">
+                    <h2 class="ftco-heading-2">Give us your Feedback</h2>
+                    <div class="block-23 mb-2">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">Pulilan, Bulacan</span></li>
+                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+63 935 255 8376</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@cafécrafts.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p style="font-size: 15px;">Copyright &copy;<script>document.write(new Date().getFullYear());</script></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
+
+<script>
+$(document).ready(function() {
+    // Check if email is already taken and display alert
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('emailTaken') && urlParams.get('emailTaken') === 'true') {
+        alert('Email is already taken. Please choose a different email.');
+    }
+});
+
+
+$('#Sign').click(function () {
+    $("#LogFirst").html("Login");
+});
+
+$("#Home").click(function () {  
+    $("#LogFirst").html("You need to login first to continue.");
+});
+
+$('#block').prop('disabled', true);
+
+$('#pw1, #pw2').on('keyup', function () {
+    if ($('#pw1').val() == $('#pw2').val() && $('#pw1').val().length > 0) {
+        $('#match').html('Password matched').css('color', 'green');
+        $('#block').prop('disabled', false).css('border','solid yellow 2px');
+    } else {
+        $('#match').html('Not Matching').css('color', 'red');
+        $('#block').prop('disabled', true).css('border','solid red 2px');
+    }
+});
+
+</script>
