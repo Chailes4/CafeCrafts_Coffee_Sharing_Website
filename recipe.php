@@ -153,7 +153,8 @@ $totalColdPages = ceil($totalColdItemsRow['total'] / $itemsPerPage);
                                 while ($row = mysqli_fetch_assoc($hotCoffeeResult)) {
                                     echo '<div class="col-md-4 text-center">';
                                     echo '<div class="menu-wrap">';
-                                    echo '<a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '" class="menu-img img mb-4" style="background-image: url(' . htmlspecialchars($row["image_url"], ENT_QUOTES) . '); height: 300px; background-size: cover; background-position: center;"></a>';
+                                    echo '<a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '" class="menu-img img mb-4" style="background-image: url(\'' . htmlspecialchars($row["image_url"], ENT_QUOTES) . '\'); height: 300px; background-size: cover; background-position: center;"></a>';
+
                                     echo '<div class="text">';
                                     echo '<h3><a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '">' . htmlspecialchars($row["name"], ENT_QUOTES) . '</a></h3>';
                                     
@@ -200,7 +201,8 @@ $totalColdPages = ceil($totalColdItemsRow['total'] / $itemsPerPage);
                                 while ($row = mysqli_fetch_assoc($coldCoffeeResult)) {
                                     echo '<div class="col-md-4 text-center">';
                                     echo '<div class="menu-wrap">';
-                                    echo '<a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '" class="menu-img img mb-4" style="background-image: url(' . htmlspecialchars($row["image_url"], ENT_QUOTES) . '); height: 300px; background-size: cover; background-position: center;"></a>';
+                                    echo '<a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '" class="menu-img img mb-4" style="background-image: url(\'' . htmlspecialchars($row["image_url"], ENT_QUOTES) . '\'); height: 300px; background-size: cover; background-position: center;"></a>';
+
                                     echo '<div class="text">';
                                     echo '<h3><a href="coffee_details.php?id=' . htmlspecialchars($row["id"], ENT_QUOTES) . '">' . htmlspecialchars($row["name"], ENT_QUOTES) . '</a></h3>';
                                     

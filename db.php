@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$dbHost = 'localhost'; // Change to your database host
-$dbUsername = 'root'; // Change to your database username
-$dbPassword = ''; // Change to your database password
-$dbName = 'recipee'; // Change to your database name
+$dbHost = 'sql100.infinityfree.com'; // Change to your database host
+$dbUsername = 'if0_40585176'; // Change to your database username
+$dbPassword = 'cafecrafts28'; // Change to your database password
+$dbName = 'if0_40585176_recipe'; // Change to your database name
 
 // Create database connection
 $conn = mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName);
